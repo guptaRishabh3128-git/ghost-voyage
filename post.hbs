@@ -21,7 +21,7 @@
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                <time class="post-date" datetime="{{date format="DD/MM/YYYY"}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" sur le sujet "}}
             </section>
         </header>
 
@@ -56,8 +56,8 @@
 
         {{/author}}
 
-            <section class="share">
-                <h4>Share this post</h4>
+            <section class="share hidden">
+                <h4>Partagez !</h4>
                 <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
@@ -75,10 +75,10 @@
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.subscribers}}
             <section class="gh-subscribe">
-                <h3 class="gh-subscribe-title">Subscribe to {{@blog.title}}</h3>
-                <p>Get the latest posts delivered right to your inbox.</p>
-                {{subscribe_form placeholder="Your email address"}}
-                <span class="gh-subscribe-rss">or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> with Feedly!</span>
+                <h3 class="gh-subscribe-title">Abonnez vous à {{@blog.title}}</h3>
+                <p>Recevez de nos nouvelles par email pendant notre voyage.</p>
+                {{subscribe_form placeholder="Votre adresse email"}}
+                <span class="gh-subscribe-rss">ou alors <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> avec Feedly!</span>
             </section>
             {{/if}}
 
