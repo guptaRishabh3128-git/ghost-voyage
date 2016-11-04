@@ -1652,12 +1652,14 @@ body:not(.page-template) .post-title {
    ========================================================================== */
 
 .gh-subscribe {
+    background: #f5f8fa url('./mailbox.svg') no-repeat top center;
     border: #e7eef2 1px solid;
-    padding: 3rem;
+    padding: 14rem 3rem 3rem;
     margin-top: 3rem;
     text-align: center;
-    background: #f5f8fa;
     border-radius: 5px;
+    background-size: 10rem;
+    background-position: center 2rem;
 }
 
 .gh-subscribe-title {
@@ -1862,7 +1864,10 @@ body:not(.page-template) .post-title {
     }
 
     .gh-subscribe {
-        padding: 2rem;
+        padding: 5rem 2rem 2rem;
+        background: #f5f8fa url('./mailbox.svg') no-repeat top center;
+        background-size: 3rem;
+        background-position: center 1rem;
     }
 
     .gh-subscribe-title {
@@ -2151,10 +2156,6 @@ body:not(.page-template) .post-title {
 
     .paged .main-header .page-description {
         display: none;
-    }
-
-    .gh-subscribe {
-        padding: 15px;
     }
 
     .gh-subscribe form {
